@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Salman — Full-Stack Developer</title>
+  <meta name="description" content=MOHAED SALMAN M — Full-Stack Developer specializing in building fast, accessible, and beautiful web applications.">
+  <meta name="keywords" content="developer, portfolio, full stack, web developer, frontend, backend">
+  <meta name="author" content="Mohamed Salman">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mohamed Salman — Full-Stack Developer">
+  <meta property="og:description" content="Portfolio showcasing projects, skills, and experience.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <span class="preloader-bracket">&lt;</span>
+      <span class="preloader-text">dev</span>
+      <span class="preloader-bracket">/&gt;</span>
+    </div>
+  </div>
+
+  <!-- ===================== FLOATING CONTACT ICONS ===================== -->
+  <div class="floating-contacts">
+    <a href="https://wa.me/+919677874550" class="float-btn float-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="float-tooltip">Chat on WhatsApp</span>
+    </a>
+    <a href="tel:+919677874550" class="float-btn float-phone" aria-label="Call me">
+      <i class="fa-solid fa-phone"></i>
+      <span class="float-tooltip">Call me</span>
+    </a>
+  </div>
+
+  <!-- ===================== SCROLL TO TOP ===================== -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo"><span class="logo-bracket">&lt;</span>AM<span class="logo-bracket">/&gt;</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active" data-section="home"><span class="nav-index">01.</span>Home</a>
+        <a href="#about" class="nav-link" data-section="about"><span class="nav-index">02.</span>About Me</a>
+        <a href="#skills" class="nav-link" data-section="skills"><span class="nav-index">03.</span>Skills</a>
+        <a href="#achievements" class="nav-link" data-section="achievements"><span class="nav-index">04.</span>Achievements</a>
+        <a href="#projects" class="nav-link" data-section="projects"><span class="nav-index">05.</span>Projects</a>
+        <a href="#journey" class="nav-link" data-section="journey"><span class="nav-index">06.</span>Journey</a>
+        <a href="#contact" class="nav-link" data-section="contact"><span class="nav-index">07.</span>Contact Me</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="home" class="hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+
+      <div class="hero-container">
+        <div class="hero-text" data-animate="fade-up">
+          <p class="hero-eyebrow"><span class="status-dot"></span>Available for freelance work</p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Mohamed Salman</span><br>
+            I build things that live<br>
+            on the <span class="typing-wrap">&lt;<span id="typingText"></span><span class="cursor">|</span>&gt;</span>
+          </h1>
+          <p class="hero-desc">
+            HI I'm a full-stack developer who turns complex problems into
+            clean, fast, and intuitive digital products. I care about pixel-perfect
+            interfaces as much as resilient backend architecture — and I sweat the
+            details most people skip.
+          </p>
+
+          <div class="hero-actions">
+            <a href="assets/resume.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+              <i class="fa-regular fa-eye"></i> View Resume
+            </a>
+            <a href="assets/resume.pdf" download class="btn btn-outline">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://facebook.com/yourusername" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:you@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-animate="fade-in">
+          <div class="hero-photo-frame">
+            <div class="frame-corner tl"></div>
+            <div class="frame-corner br"></div>
+            <img src="images/profile.png" alt="Portrait of Arjun Mehta" class="hero-photo" onerror="this.src='https://via.placeholder.com/420x420/0B1220/3B82F6?text=Your+Photo'">
+          </div>
+          <div class="floating-badge badge-1"><i class="fa-solid fa-code"></i> Clean Code</div>
+          <div class="floating-badge badge-2"><i class="fa-solid fa-bolt"></i> Fast Builds</div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <span>Scroll</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section id="about" class="section about">
+      <div class="container">
+        <p class="section-eyebrow" data-animate="fade-up">02. // About Me</p>
+        <h2 class="section-title" data-animate="fade-up">Get to know me a little better</h2>
+
+        <div class="about-grid">
+          <div class="about-text" data-animate="fade-up">
+            <p>
+              Hi I'm a developer based in  coimbtore,india with a passion for
+              crafting digital experiences that feel as good as they look. My journey
+              started with curiosity about how websites work, and turned into a career
+              building products used by real people.
+            </p>
+            <p>
+              I specialize in modern JavaScript frameworks, scalable backend systems,
+              and design systems that keep teams shipping fast without breaking
+              consistency. When I'm not coding, you'll find me gaming, reading
+              about new tech, or contributing to open source.
+            </p>
+            <ul class="about-list">
+              <li><i class="fa-solid fa-check"></i> 3+ years building production web apps</li>
+              <li><i class="fa-solid fa-check"></i> Comfortable across the full stack</li>
+              <li><i class="fa-solid fa-check"></i> Obsessed with performance & accessibility</li>
+            </ul>
+          </div>
+
+          <div class="about-info-card" data-animate="fade-up">
+            <div class="info-row"><span>Name</span><span>Mohamed Salman</span></div>
+            <div class="info-row"><span>Email</span><span>mohamedsalman04082005@gmail.com</span></div>
+            <div class="info-row"><span>Location</span><span>Coimbatore, India</span></div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <p class="section-eyebrow" data-animate="fade-up">03. // What I Work With</p>
+        <h2 class="section-title" data-animate="fade-up">Skills &amp; Technologies</h2>
+
+        <!-- Floating language icons -->
+        <div class="lang-float-field" data-animate="fade-up">
+          <div class="lang-icon" style="--x:8%; --y:20%; --delay:0s;" data-name="HTML5">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="lang-icon" style="--x:24%; --y:65%; --delay:1.2s;" data-name="CSS3">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <div class="lang-icon" style="--x:40%; --y:15%; --delay:0.6s;" data-name="JavaScript">
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <div class="lang-icon" style="--x:56%; --y:55%; --delay:1.8s;" data-name="React">
+            <i class="fa-brands fa-react"></i>
+          </div>
+          <div class="lang-icon" style="--x:71%; --y:25%; --delay:0.3s;" data-name="Node.js">
+            <i class="fa-brands fa-node-js"></i>
+          </div>
+          <div class="lang-icon" style="--x:85%; --y:60%; --delay:2.1s;" data-name="Python">
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <div class="lang-icon" style="--x:15%; --y:80%; --delay:1.5s;" data-name="Git">
+            <i class="fa-brands fa-git-alt"></i>
+          </div>
+          <div class="lang-icon" style="--x:64%; --y:80%; --delay:0.9s;" data-name="Database">
+            <i class="fa-solid fa-database"></i>
+          </div>
+        </div>
+
+        <!-- Skill progress bars -->
+        <div class="skills-bars" data-animate="fade-up">
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>HTML / CSS</span><span class="skill-percent">95%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>JavaScript</span><span class="skill-percent">90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>React.js</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>Node.js / Express</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>Databases (SQL/NoSQL)</span><span class="skill-percent">75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>UI / UX Design</span><span class="skill-percent">70%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACHIEVEMENTS SECTION ===================== -->
+    <section id="achievements" class="section achievements">
+      <div class="container">
+        <p class="section-eyebrow" data-animate="fade-up">04. // By The Numbers</p>
+        <h2 class="section-title" data-animate="fade-up">Achievements</h2>
+
+        <div class="counter-grid" data-animate="fade-up">
+          <div class="counter-card">
+            <span class="counter-num" data-target="45">0</span><span class="counter-suffix">+</span>
+            <p>Projects Completed</p>
+          </div>
+          <div class="counter-card">
+            <span class="counter-num" data-target="3">0</span><span class="counter-suffix">+</span>
+            <p>Years Experience</p>
+          </div>
+          <div class="counter-card">
+            <span class="counter-num" data-target="20">0</span><span class="counter-suffix">+</span>
+            <p>Happy Clients</p>
+          </div>
+          <div class="counter-card">
+            <span class="counter-num" data-target="8">0</span><span class="counter-suffix">+</span>
+            <p>Certifications</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS SECTION ===================== -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <p class="section-eyebrow" data-animate="fade-up">05. // My Work</p>
+        <h2 class="section-title" data-animate="fade-up">Featured Projects</h2>
+
+        <div class="project-filters" data-animate="fade-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web App</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        </div>
+
+        <div class="project-grid" data-animate="fade-up">
+          <article class="project-card" data-category="fullstack">
+            <div class="project-img"><img src="images/projects/project1.jpg" alt="E-Commerce Platform screenshot" onerror="this.src='https://via.placeholder.com/500x320/0B1220/3B82F6?text=Project+One'"></div>
+            <div class="project-body">
+              <h3>E-Commerce Platform</h3>
+              <p>A full-stack store with cart, payments, and an admin dashboard.</p>
+              <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="frontend">
+            <div class="project-img"><img src="images/projects/project2.jpg" alt="Portfolio Builder screenshot" onerror="this.src='https://via.placeholder.com/500x320/0B1220/3B82F6?text=Project+Two'"></div>
+            <div class="project-body">
+              <h3>Drag-and-Drop Page Builder</h3>
+              <p>A visual editor for building landing pages without writing code.</p>
+              <div class="project-tags"><span>JavaScript</span><span>CSS3</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <div class="project-img"><img src="images/projects/project3.jpg" alt="Task Manager App screenshot" onerror="this.src='https://via.placeholder.com/500x320/0B1220/3B82F6?text=Project+Three'"></div>
+            <div class="project-body">
+              <h3>Team Task Manager</h3>
+              <p>A Kanban-style productivity app with real-time sync.</p>
+              <div class="project-tags"><span>React</span><span>Firebase</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="fullstack">
+            <div class="project-img"><img src="images/projects/project4.jpg" alt="Analytics Dashboard screenshot" onerror="this.src='https://via.placeholder.com/500x320/0B1220/3B82F6?text=Project+Four'"></div>
+            <div class="project-body">
+              <h3>Analytics Dashboard</h3>
+              <p>Real-time data visualization dashboard for business metrics.</p>
+              <div class="project-tags"><span>Vue</span><span>Express</span><span>PostgreSQL</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== JOURNEY (TIMELINE) SECTION ===================== -->
+    <section id="journey" class="section journey">
+      <div class="container">
+        <p class="section-eyebrow" data-animate="fade-up">06. // How I Got Here</p>
+        <h2 class="section-title" data-animate="fade-up">My Journey</h2>
+
+        <div class="timeline">
+          <div class="timeline-item" data-animate="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2020-present</span>
+              <h3>SSLC completion</h3>
+              <p class="timeline-org"></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="timeline-item" data-animate="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2021-2022</span>
+              <h3>HSC completion</h3>
+              <p class="timeline-org"></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="timeline-item" data-animate="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022-2025</span>
+              <h3>BSC Information Technology</h3>
+              <p class="timeline-org">Bharathiyar University</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="certifications" data-animate="fade-up">
+          <h3 class="sub-heading">Certifications</h3>
+          <div class="cert-grid">
+            <div class="cert-card"><i class="fa-solid fa-certificate"></i><span>AWS Certified Developer</span></div>
+            <div class="cert-card"><i class="fa-solid fa-certificate"></i><span>Meta Front-End Professional</span></div>
+            <div class="cert-card"><i class="fa-solid fa-certificate"></i><span>Google UX Design</span></div>
+            <div class="cert-card"><i class="fa-solid fa-certificate"></i><span>MongoDB Certified Developer</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <p class="section-eyebrow" data-animate="fade-up">07. // Get In Touch</p>
+        <h2 class="section-title" data-animate="fade-up">Contact Me</h2>
+        <p class="contact-sub" data-animate="fade-up">Have a project in mind or just want to say hi? My inbox is always open.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-animate="fade-up">
+            <div class="contact-info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div><span>Email</span><a href="mailto:mohamedsalman04082005@gmail.com">mohamedsalman04082005@gmail.com</a></div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div><span>Phone</span><a href="tel:+919677874550">+91 9677874550</a></div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div><span>Location</span><a href="#">Coimbatore, India</a></div>
+            </div>
+            <div class="contact-socials">
+              <a href="https://wa.me/919677874550" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://facebook.com/yourusername" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" data-animate="fade-up" novalidate>
+            <div class="form-group">
+              <input type="text" id="nameInput" name="name" placeholder="Your Name" required>
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="emailInput" name="email" placeholder="Your Email" required>
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <textarea id="messageInput" name="message" rows="5" placeholder="Your Message" required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-success" id="formSuccess">Message sent — I'll get back to you soon!</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo"><span class="logo-bracket">&lt;</span>AM<span class="logo-bracket">/&gt;</span></a>
+      <nav class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://wa.me/9677874550" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Mohamed Salman Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
