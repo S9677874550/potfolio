@@ -1,0 +1,60 @@
+/* =========================================================
+   ANIMATIONS — keyframes used across the site
+   ========================================================= */
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.15); }
+}
+
+@keyframes typeBlink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes floatPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(45, 91, 255, 0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(45, 91, 255, 0); }
+}
+
+/* Smooth continuous drifting motion for the language icons —
+   each icon gets a slightly different path via nth-child so the
+   field doesn't look mechanically uniform. */
+@keyframes drift {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  25%  { transform: translate(14px, -18px) rotate(4deg); }
+  50%  { transform: translate(-10px, -8px) rotate(-3deg); }
+  75%  { transform: translate(10px, 14px) rotate(3deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.lang-icon:nth-child(2n) { animation-name: drift2; }
+.lang-icon:nth-child(3n) { animation-name: drift3; }
+
+@keyframes drift2 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  30%  { transform: translate(-16px, 12px) rotate(-5deg); }
+  60%  { transform: translate(8px, -16px) rotate(4deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes drift3 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  40%  { transform: translate(12px, 10px) rotate(3deg); }
+  70%  { transform: translate(-14px, -10px) rotate(-4deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
